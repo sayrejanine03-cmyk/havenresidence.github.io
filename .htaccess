@@ -1,0 +1,6 @@
+# Always check for the newest CSS/JS so design updates show right away
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
